@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-lg text-light;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-dark;
+  }
+  .h2 {
+    @apply text-7xl font-bold;
+  }
+  .pretitle {
+    @apply text-[22px] text-light uppercase font-normal;
+  }
+  .title {
+    @apply text-8xl font-bold;
+  }
+  .subtitle {
+    @apply text-2xl text-light font-normal;
+  }
+  .link {
+    @apply text-lg text-dark;
+  }
+  .section {
+    @apply py-[142px];
+  }
+  .btn {
+    @apply rounded-lg;
+  }
+  .btn-lg {
+    @apply h-[75px] px-6 max-w-[225px] text-2xl font-normal;
+  }
+  .btn-accent {
+    @apply text-white bg-accent hover:bg-accent/90;
+  }
+  .btn-outline {
+    @apply bg-transparent text-accent border border-accent;
+  }
+}
