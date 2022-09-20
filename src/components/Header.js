@@ -1,22 +1,40 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import data
 import { header } from '../data';
 // import icons
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi';
 // import components
 import MobileNav from '../components/MobileNav';
+import Nav from './Nav';
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   // destructure header data
   const { logo, btnText } = header;
+  // scroll event
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
+    });
+  });
   return (
-    <header className='bg-dark/20 py-4 fixed top-0 lg:top-[60px] w-full'>
-      <div className='container mx-auto flex justify-between'>
+    <header
+      className={`${
+        isActive ? 'lg:top-0 bg-white shadow-2xl' : 'lg:top-[60px]'
+      } py-6 fixed w-full transition-all`}
+    >
+      <div className='container mx-auto flex justify-between items-center'>
         {/* logo */}
         <a href='#'>
           <img src={logo} alt='' />
         </a>
+        {/* nav - initially hidden */}
+        <div className='hidden lg:flex'>
+          <Nav />
+        </div>
+        {/* cta button */}
+        <button className='btn btn-sm btn-outline'>{btnText}</button>
         {/* mobile nav trigger btn / desktop hidden */}
         <button className='lg:hidden' onClick={() => setMobileNav(!mobileNav)}>
           {mobileNav ? (
