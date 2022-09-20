@@ -11,7 +11,9 @@ const Nav = () => {
           const { href, name } = item;
           return (
             <li key={index}>
-              <a href={href}>{name}</a>
+              <a className='hover:text-accent transition' href={href}>
+                {name}
+              </a>
             </li>
           );
         })}

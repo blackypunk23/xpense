@@ -33,7 +33,7 @@
     @apply py-[142px];
   }
   .btn {
-    @apply rounded-lg transition;
+    @apply rounded-lg transition flex justify-center items-center;
   }
   .btn-lg {
     @apply h-[75px] px-6 text-2xl font-normal;
@@ -45,12 +45,12 @@
     @apply h-[48px] px-[16px] text-lg font-normal;
   }
   .btn-accent {
-    @apply text-white bg-accent hover:bg-[#e05216];
+    @apply text-white bg-accent hover:bg-accentHover;
   }
   .btn-white {
     @apply text-accent bg-white hover:bg-white/90;
   }
   .btn-outline {
-    @apply bg-transparent text-accent border border-accent hover:bg-accentHover hover:text-white;
+    @apply bg-transparent text-accent border border-accent hover:bg-accent hover:text-white;
   }
 }

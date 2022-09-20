@@ -13,10 +13,26 @@ const Hero = () => {
         <div className='flex flex-col lg:gap-x-[30px] gap-y-8 lg:gap-y-0 lg:flex-row items-center justify-center text-center lg:text-left'>
           {/* text */}
           <div className='flex-1'>
-            <h1 className='h1 mb-2 lg:mb-5'>{title}</h1>
-            <p className='lead mb-5 lg:mb-10'>{subtitle}</p>
+            <h1
+              className='h1 mb-2 lg:mb-5'
+              data-aos='fade-down'
+              data-aos-delay='500'
+            >
+              {title}
+            </h1>
+            <p
+              className='lead mb-5 lg:mb-10'
+              data-aos='fade-down'
+              data-aos-delay='600'
+            >
+              {subtitle}
+            </p>
             {/* button & compatibility text */}
-            <div className='flex items-center max-w-sm lg:max-w-full mx-auto lg:mx-0 gap-x-4 lg:gap-x-6'>
+            <div
+              className='flex items-center max-w-sm lg:max-w-full mx-auto lg:mx-0 gap-x-4 lg:gap-x-6'
+              data-aos='fade-down'
+              data-aos-delay='700'
+            >
               <button className='btn btn-md lg:btn-lg btn-accent flex justify-center items-center gap-x-4'>
                 {btnText}
                 <HiOutlineChevronDown />
@@ -25,7 +41,7 @@ const Hero = () => {
             </div>
           </div>
           {/* image */}
-          <div className='flex-1'>
+          <div className='flex-1' data-aos='fade-up' data-aos-delay='800'>
             <img src={image} alt='' />
           </div>
         </div>

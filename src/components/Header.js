@@ -22,7 +22,7 @@ const Header = () => {
     <header
       className={`${
         isActive ? 'lg:top-0 bg-white shadow-2xl' : 'lg:top-[60px]'
-      } py-6 fixed w-full transition-all`}
+      } py-6 lg:py-4 fixed w-full transition-all z-10`}
     >
       <div className='container mx-auto flex justify-between items-center'>
         {/* logo */}
@@ -33,8 +33,10 @@ const Header = () => {
         <div className='hidden lg:flex'>
           <Nav />
         </div>
-        {/* cta button */}
-        <button className='btn btn-sm btn-outline'>{btnText}</button>
+        {/* cta button - initially hidden */}
+        <button className='btn btn-sm btn-outline hidden lg:flex'>
+          {btnText}
+        </button>
         {/* mobile nav trigger btn / desktop hidden */}
         <button className='lg:hidden' onClick={() => setMobileNav(!mobileNav)}>
           {mobileNav ? (
