@@ -14,16 +14,16 @@
   h6 {
     @apply text-dark;
   }
+  .h1 {
+    @apply text-6xl lg:text-8xl font-bold;
+  }
   .h2 {
     @apply text-7xl font-bold;
   }
   .pretitle {
     @apply text-[22px] text-light uppercase font-normal;
   }
-  .title {
-    @apply text-8xl font-bold;
-  }
-  .subtitle {
+  .lead {
     @apply text-2xl text-light font-normal;
   }
   .link {
@@ -36,13 +36,13 @@
     @apply rounded-lg transition;
   }
   .btn-lg {
-    @apply h-[75px] px-6 max-w-[225px] text-2xl font-normal;
+    @apply h-[75px] px-6 text-2xl font-normal;
   }
   .btn-md {
-    @apply h-[60px] px-[16px] max-w-[160px] text-lg font-normal;
+    @apply h-[60px] px-[16px] text-lg font-normal;
   }
   .btn-sm {
-    @apply h-[48px] px-[16px] max-w-[160px] text-lg font-normal;
+    @apply h-[48px] px-[16px] text-lg font-normal;
   }
   .btn-accent {
     @apply text-white bg-accent hover:bg-[#e05216];

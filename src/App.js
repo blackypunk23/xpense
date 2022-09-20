@@ -9,6 +9,7 @@ const App = () => {
     <div>
       <Header />
       <Hero />
+      <div className='h-[4000px]'></div>
     </div>
   );
 };

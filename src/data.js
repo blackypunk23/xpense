@@ -18,7 +18,6 @@ export const hero = {
   title: 'Track your Expenses to Save Money',
   subtitle: 'Helps you to organize your income and expenses',
   btnText: 'Try free demo',
-  btnIcon: '',
-  compText: '— Web, iOs and Android',
+  compText: '— Web, iOS and Android',
   image: HeroImg,
 };
