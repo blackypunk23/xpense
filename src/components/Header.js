@@ -5,10 +5,15 @@ import { header } from '../data';
 
 const Header = () => {
   // destructure header data
-  const { logo } = header;
+  const { logo, btnText } = header;
   return (
     <header>
-      <div className='container mx-auto'>header</div>
+      <div className='container mx-auto'>
+        {/* logo */}
+        <a href='#'>
+          <img src={logo} alt='' />
+        </a>
+      </div>
     </header>
   );
 };
