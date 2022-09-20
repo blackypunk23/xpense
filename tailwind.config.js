@@ -21,6 +21,7 @@ module.exports = {
         dark: '#292830',
         light: '#BDBDBD',
         accent: '#FF7235',
+        accentHover: '#e05216',
       },
     },
   },
