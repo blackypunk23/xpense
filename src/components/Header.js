@@ -26,15 +26,23 @@ const Header = () => {
     >
       <div className='container mx-auto flex justify-between items-center'>
         {/* logo */}
-        <a href='#'>
+        <a href='#' data-aos='fade-down' data-aos-delay='1000'>
           <img src={logo} alt='' />
         </a>
         {/* nav - initially hidden */}
-        <div className='hidden lg:flex'>
+        <div
+          className='hidden lg:flex'
+          data-aos='fade-down'
+          data-aos-delay='1200'
+        >
           <Nav />
         </div>
         {/* cta button - initially hidden */}
-        <button className='btn btn-sm btn-outline hidden lg:flex'>
+        <button
+          className='btn btn-sm btn-outline hidden lg:flex'
+          data-aos='fade-down'
+          data-aos-delay='1400'
+        >
           {btnText}
         </button>
         {/* mobile nav trigger btn / desktop hidden */}
