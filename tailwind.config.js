@@ -23,6 +23,10 @@ module.exports = {
         accent: '#FF7235',
         accentHover: '#e05216',
       },
+      backgroundImage: {
+        overview: "url('/src/assets/img/overview/bg.svg')",
+        cta: "url('/src/assets/img/cta/bg.svg')",
+      },
     },
   },
   plugins: [],
