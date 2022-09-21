@@ -14,23 +14,24 @@
   h6 {
     @apply text-dark;
   }
-  .h1 {
-    @apply text-6xl lg:text-8xl font-bold;
+  .title,
+  .section-title {
+    @apply text-6xl lg:text-8xl mb-6 font-bold;
   }
   .h2 {
-    @apply text-7xl font-bold;
+    @apply text-5xl lg:text-7xl font-bold;
   }
   .pretitle {
-    @apply text-[22px] text-light uppercase font-normal;
+    @apply text-lg lg:text-[22px] text-light mb-4 lg:mb-6 uppercase font-normal;
   }
   .lead {
-    @apply text-2xl text-light font-normal;
+    @apply text-2xl text-light font-normal mb-6;
   }
   .link {
     @apply text-lg text-dark;
   }
   .section {
-    @apply py-[142px];
+    @apply py-8 lg:py-[142px];
   }
   .btn {
     @apply rounded-lg transition flex justify-center items-center;
@@ -52,5 +53,8 @@
   }
   .btn-outline {
     @apply bg-transparent text-accent border border-accent hover:bg-accent hover:text-white;
+  }
+  .btn-link {
+    @apply text-accent text-xl lg:text-2xl;
   }
 }

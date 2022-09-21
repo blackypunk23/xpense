@@ -46,7 +46,12 @@ const Header = () => {
           {btnText}
         </button>
         {/* mobile nav trigger btn / desktop hidden */}
-        <button className='lg:hidden' onClick={() => setMobileNav(!mobileNav)}>
+        <button
+          className='lg:hidden'
+          onClick={() => setMobileNav(!mobileNav)}
+          data-aos='fade-down'
+          data-aos-delay='1400'
+        >
           {mobileNav ? (
             <HiOutlineX className='text-3xl text-accent' />
           ) : (

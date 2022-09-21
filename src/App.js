@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Overview from './components/Overview';
 import Brands from './components/Brands';
+import Feature1 from './components/Feature1';
 
 const App = () => {
   // initialize aos
@@ -23,6 +24,7 @@ const App = () => {
       <Hero />
       <Overview />
       <Brands />
+      <Feature1 />
       <div className='h-[4000px]'></div>
     </div>
   );

@@ -14,7 +14,7 @@ const Hero = () => {
           {/* text */}
           <div className='flex-1'>
             <h1
-              className='h1 mb-2 lg:mb-5'
+              className='title mb-2 lg:mb-5'
               data-aos='fade-down'
               data-aos-delay='500'
             >
@@ -29,15 +29,15 @@ const Hero = () => {
             </p>
             {/* button & compatibility text */}
             <div
-              className='flex items-center max-w-sm lg:max-w-full mx-auto lg:mx-0 gap-x-4 lg:gap-x-6'
+              className='flex items-center max-w-sm lg:max-w-full mx-auto lg:mx-0 gap-x-2 lg:gap-x-6'
               data-aos='fade-down'
               data-aos-delay='700'
             >
-              <button className='btn btn-md lg:btn-lg btn-accent flex justify-center items-center gap-x-4'>
+              <button className='btn btn-md lg:btn-lg btn-accent flex justify-center items-center lg:gap-x-4'>
                 {btnText}
                 <HiOutlineChevronDown />
               </button>
-              <span className='text-light lg:lead'>{compText}</span>
+              <span className='text-light lg:lead lg:mb-0'>{compText}</span>
             </div>
           </div>
           {/* image */}
