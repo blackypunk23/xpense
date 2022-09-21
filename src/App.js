@@ -11,6 +11,8 @@ import Hero from './components/Hero';
 import Overview from './components/Overview';
 import Brands from './components/Brands';
 import Feature1 from './components/Feature1';
+import Feature2 from './components/Feature2';
+import Feature3 from './components/Feature3';
 
 const App = () => {
   // initialize aos
@@ -25,6 +27,8 @@ const App = () => {
       <Overview />
       <Brands />
       <Feature1 />
+      <Feature2 />
+      <Feature3 />
       <div className='h-[4000px]'></div>
     </div>
   );

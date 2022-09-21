@@ -3,17 +3,29 @@ import React from 'react';
 // import data
 import { features } from '../data';
 
-const Feature1 = () => {
+const Feature2 = () => {
   // destructure features
-  const { feature1 } = features;
-  // destructure feature1
-  const { pretitle, title, subtitle, btnLink, btnIcon, image } = feature1;
+  const { feature2 } = features;
+  // destructure feature2
+  const { pretitle, title, subtitle, btnLink, btnIcon, image } = feature2;
   return (
     <section className='section'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row lg:items-center lg:gap-x-[30px]'>
+          {/* image */}
+          <div
+            className='flex-1 order-2 lg:order-1'
+            data-aos='fade-right'
+            data-aos-offset='300'
+          >
+            <img src={image} alt='' />
+          </div>
           {/* text */}
-          <div className='flex-1' data-aos='fade-right' data-aos-offset='400'>
+          <div
+            className='flex-1 order-1 lg:order-2'
+            data-aos='fade-left'
+            data-aos-offset='400'
+          >
             <div className='pretitle'>{pretitle}</div>
             <h2 className='title'>{title}</h2>
             <p className='lead'>{subtitle}</p>
@@ -21,14 +33,10 @@ const Feature1 = () => {
               {btnLink} <img src={btnIcon} />
             </button>
           </div>
-          {/* image */}
-          <div className='flex-1' data-aos='fade-left' data-aos-offset='300'>
-            <img src={image} alt='' />
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Feature1;
+export default Feature2;
