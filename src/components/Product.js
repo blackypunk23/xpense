@@ -1,0 +1,24 @@
+import React, { useState } from 'react';
+// import data
+import { product } from '../data';
+// import components
+import Cards from './Cards';
+
+const Product = () => {
+  // destructure product data
+  const { title, subtitle, cards } = product;
+  return (
+    <section className='section'>
+      <div className='container mx-auto'>
+        {/* title & subtitle */}
+        <div className='flex flex-col items-center lg:flex-row mb-16 lg:mb-20'>
+          <h2 className='section-title'>{title}</h2>
+          <p className='lead lg:max-w-[350px]'>{subtitle}</p>
+        </div>
+        <Cards />
+      </div>
+    </section>
+  );
+};
+
+export default Product;

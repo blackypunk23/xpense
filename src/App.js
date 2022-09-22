@@ -13,6 +13,7 @@ import Brands from './components/Brands';
 import Feature1 from './components/Feature1';
 import Feature2 from './components/Feature2';
 import Feature3 from './components/Feature3';
+import Product from './components/Product';
 
 const App = () => {
   // initialize aos
@@ -21,7 +22,7 @@ const App = () => {
     offset: 100,
   });
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Header />
       <Hero />
       <Overview />
@@ -29,6 +30,7 @@ const App = () => {
       <Feature1 />
       <Feature2 />
       <Feature3 />
+      <Product />
       <div className='h-[4000px]'></div>
     </div>
   );

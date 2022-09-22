@@ -11,6 +11,9 @@ import Feature1Img from '../src/assets/img/features/feature1-img.svg';
 import Feature2Img from '../src/assets/img/features/feature2-img.svg';
 import Feature3Img from '../src/assets/img/features/feature3-img.svg';
 import ArrowRightImg from '../src/assets/img/features/arrow-right.svg';
+import CardIconImg1 from '../src/assets/img/product/cards/icon1.svg';
+import CardIconImg2 from '../src/assets/img/product/cards/icon2.svg';
+import CardIconImg3 from '../src/assets/img/product/cards/icon3.svg';
 
 export const header = {
   logo: LogoImg,
@@ -86,4 +89,27 @@ export const features = {
     btnIcon: ArrowRightImg,
     image: Feature3Img,
   },
+};
+
+export const product = {
+  title: 'The Product we work with.',
+  subtitle:
+    'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.',
+  cards: [
+    {
+      icon: CardIconImg1,
+      title: 'Cross platform',
+      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+    },
+    {
+      icon: CardIconImg2,
+      title: 'Cloud server',
+      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+    },
+    {
+      icon: CardIconImg3,
+      title: 'Pure Javascript',
+      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+    },
+  ],
 };
