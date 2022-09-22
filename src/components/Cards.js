@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 // import data
 import { product } from '../data';
+// import arrow image
+import ArrowImg from '../assets/img/product/cards/arrow.svg';
 
 const Cards = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
   // destructure product
   const { cards } = product;
   return (
     <>
       {/* cards */}
-      <div className='flex flex-col lg:flex-row lg:gap-x-[30px]'>
+      <div
+        className='flex flex-col gap-y-[30px] lg:flex-row lg:gap-x-[30px]'
+        data-aos='fade-up'
+        data-aos-offset='400'
+        data-aos-delay='500'
+      >
         {cards.map((card, cardIndex) => {
           // destructure card
           const { icon, title, subtitle } = card;
@@ -27,9 +34,10 @@ const Cards = () => {
                 <img src={icon} alt='' />
               </div>
               {/* card title */}
-              <div className='mb-3'>{title}</div>
+              <div className='mb-3 text-[30px] font-medium'>{title}</div>
               {/* card subtitle */}
-              <p>{subtitle}</p>
+              <p className='mb-6 text-light'>{subtitle}</p>
+              {index === cardIndex && <img src={ArrowImg} />}
             </div>
           );
         })}
