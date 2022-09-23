@@ -14,6 +14,9 @@ import ArrowRightImg from '../src/assets/img/features/arrow-right.svg';
 import CardIconImg1 from '../src/assets/img/product/cards/icon1.svg';
 import CardIconImg2 from '../src/assets/img/product/cards/icon2.svg';
 import CardIconImg3 from '../src/assets/img/product/cards/icon3.svg';
+import PricingIcon1 from '../src/assets/img/pricing/icon1.svg';
+import PricingIcon2 from '../src/assets/img/pricing/icon2.svg';
+import PricingIcon3 from '../src/assets/img/pricing/icon3.svg';
 
 export const header = {
   logo: LogoImg,
@@ -110,6 +113,48 @@ export const product = {
       icon: CardIconImg3,
       title: 'Pure Javascript',
       subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+    },
+  ],
+};
+
+export const pricing = {
+  title: 'Choose your flexible plan.',
+  cards: [
+    {
+      icon: PricingIcon1,
+      title: 'Starter Plan',
+      services: [
+        { name: 'Store unlimited data' },
+        { name: 'Export to pdf, xls, csv' },
+        { name: 'Cloud server support' },
+      ],
+      price: '$9.99',
+      userAmount: 'up to 3 user + 1.99 per user',
+      btnText: 'Get this',
+    },
+    {
+      icon: PricingIcon2,
+      title: 'Silver Plan',
+      services: [
+        { name: 'Store unlimited data' },
+        { name: 'Export to pdf, xls, csv' },
+        { name: 'Cloud server support' },
+      ],
+      price: '$19.99',
+      userAmount: 'up to 3 user + 1.99 per user',
+      btnText: 'Get this',
+    },
+    {
+      icon: PricingIcon3,
+      title: 'Diamon Plan',
+      services: [
+        { name: 'Store unlimited data' },
+        { name: 'Export to pdf, xls, csv' },
+        { name: 'Cloud server support' },
+      ],
+      price: '$29.99',
+      userAmount: 'up to 3 user + 1.99 per user',
+      btnText: 'Get this',
     },
   ],
 };
