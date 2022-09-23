@@ -22,7 +22,7 @@ const Feature3 = () => {
             </button>
           </div>
           {/* image */}
-          <div className='flex-1' data-aos='fade-left' data-aos-offset='400'>
+          <div className='flex-1' data-aos='fade-left' data-aos-offset='300'>
             <img src={image} alt='' />
           </div>
         </div>
