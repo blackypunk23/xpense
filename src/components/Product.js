@@ -6,7 +6,7 @@ import Cards from './Cards';
 
 const Product = () => {
   // destructure product data
-  const { title, subtitle, cards } = product;
+  const { title, subtitle } = product;
   return (
     <section className='section'>
       <div className='container mx-auto'>

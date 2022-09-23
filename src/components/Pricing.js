@@ -25,7 +25,11 @@ const Pricing = () => {
             const { icon, title, services, price, userAmount, btnText, delay } =
               card;
             return (
-              <div data-aos='fade-up' data-aos-delay={delay}>
+              <div
+                data-aos='fade-up'
+                data-aos-delay={delay}
+                data-aos-offset='300'
+              >
                 <div
                   onClick={() => setIndex(cardIndex)}
                   className={`${

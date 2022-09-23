@@ -17,6 +17,16 @@ import CardIconImg3 from '../src/assets/img/product/cards/icon3.svg';
 import PricingIcon1 from '../src/assets/img/pricing/icon1.svg';
 import PricingIcon2 from '../src/assets/img/pricing/icon2.svg';
 import PricingIcon3 from '../src/assets/img/pricing/icon3.svg';
+import AvatarImg1 from '../src/assets/img/testimonial/avatar1.png';
+import AvatarImg2 from '../src/assets/img/testimonial/avatar2.png';
+import AvatarImg3 from '../src/assets/img/testimonial/avatar3.png';
+import AvatarImg4 from '../src/assets/img/testimonial/avatar4.png';
+import AvatarImg5 from '../src/assets/img/testimonial/avatar5.png';
+import AvatarImg6 from '../src/assets/img/testimonial/avatar6.png';
+import AvatarImg7 from '../src/assets/img/testimonial/avatar7.png';
+import AvatarImg8 from '../src/assets/img/testimonial/avatar8.png';
+import AvatarImg9 from '../src/assets/img/testimonial/avatar9.png';
+import AvatarImg10 from '../src/assets/img/testimonial/avatar10.png';
 
 export const header = {
   logo: LogoImg,
@@ -103,16 +113,19 @@ export const product = {
       icon: CardIconImg1,
       title: 'Cross platform',
       subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+      delay: 200,
     },
     {
       icon: CardIconImg2,
       title: 'Cloud server',
       subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+      delay: 400,
     },
     {
       icon: CardIconImg3,
       title: 'Pure Javascript',
       subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+      delay: 600,
     },
   ],
 };
@@ -144,11 +157,11 @@ export const pricing = {
       price: '$19.99',
       userAmount: 'up to 3 user + 1.99 per user',
       btnText: 'Get this',
-      delay: 500,
+      delay: 600,
     },
     {
       icon: PricingIcon3,
-      title: 'Diamon Plan',
+      title: 'Diamond Plan',
       services: [
         { name: 'Store unlimited data' },
         { name: 'Export to pdf, xls, csv' },
@@ -157,7 +170,76 @@ export const pricing = {
       price: '$29.99',
       userAmount: 'up to 3 user + 1.99 per user',
       btnText: 'Get this',
-      delay: 700,
+      delay: 900,
+    },
+  ],
+};
+
+export const testimonials = {
+  title: 'We have millions of best wishers',
+  clients: [
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg1,
+      name: 'Cameron Williamson',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Shirley Hand',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Dr. Olivia Hansen',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Aubrey Sanford',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Terri Conroy',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Darrel Larson',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Muriel Bechtelar',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Darren Blanda',
+      position: 'CEO',
+    },
+    {
+      message:
+        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium felis massa mauris, aliquam congue.',
+      image: AvatarImg2,
+      name: 'Sandra Watsica',
+      position: 'CEO',
     },
   ],
 };

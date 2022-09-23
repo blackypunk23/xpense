@@ -11,33 +11,34 @@ const Cards = () => {
   return (
     <>
       {/* cards */}
-      <div
-        className='flex flex-col gap-y-[30px] lg:flex-row lg:gap-x-[30px]'
-        data-aos='fade-up'
-        data-aos-offset='400'
-        data-aos-delay='500'
-      >
+      <div className='flex flex-col gap-y-[30px] lg:flex-row lg:gap-x-[30px]'>
         {cards.map((card, cardIndex) => {
           // destructure card
-          const { icon, title, subtitle } = card;
+          const { icon, title, subtitle, delay } = card;
           return (
             // card
             <div
-              onClick={() => setIndex(cardIndex)}
-              className={`${
-                index === cardIndex && 'bg-white shadow-2xl'
-              }  w-[350px] h-[350px] flex flex-col justify-center items-center mx-auto p-[65px] text-center rounded-[12px] cursor-pointer transition-all`}
-              key={cardIndex}
+              data-aos='zoom-out'
+              data-aos-offset='300'
+              data-aos-delay={delay}
             >
-              {/* card icon */}
-              <div className='mb-6'>
-                <img src={icon} alt='' />
+              <div
+                onClick={() => setIndex(cardIndex)}
+                className={`${
+                  index === cardIndex && 'bg-white shadow-2xl'
+                }  w-[350px] h-[350px] flex flex-col justify-center items-center mx-auto p-[65px] text-center rounded-[12px] cursor-pointer transition-all`}
+                key={cardIndex}
+              >
+                {/* card icon */}
+                <div className='mb-6'>
+                  <img src={icon} alt='' />
+                </div>
+                {/* card title */}
+                <div className='mb-3 text-[30px] font-medium'>{title}</div>
+                {/* card subtitle */}
+                <p className='mb-6 text-light'>{subtitle}</p>
+                {index === cardIndex && <img src={ArrowImg} />}
               </div>
-              {/* card title */}
-              <div className='mb-3 text-[30px] font-medium'>{title}</div>
-              {/* card subtitle */}
-              <p className='mb-6 text-light'>{subtitle}</p>
-              {index === cardIndex && <img src={ArrowImg} />}
             </div>
           );
         })}
