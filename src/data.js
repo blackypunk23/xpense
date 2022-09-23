@@ -131,6 +131,7 @@ export const pricing = {
       price: '$9.99',
       userAmount: 'up to 3 user + 1.99 per user',
       btnText: 'Get this',
+      delay: 300,
     },
     {
       icon: PricingIcon2,
@@ -143,6 +144,7 @@ export const pricing = {
       price: '$19.99',
       userAmount: 'up to 3 user + 1.99 per user',
       btnText: 'Get this',
+      delay: 500,
     },
     {
       icon: PricingIcon3,
@@ -155,6 +157,7 @@ export const pricing = {
       price: '$29.99',
       userAmount: 'up to 3 user + 1.99 per user',
       btnText: 'Get this',
+      delay: 700,
     },
   ],
 };
