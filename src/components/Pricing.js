@@ -29,6 +29,7 @@ const Pricing = () => {
                 data-aos='fade-up'
                 data-aos-delay={delay}
                 data-aos-offset='300'
+                key={cardIndex}
               >
                 <div
                   onClick={() => setIndex(cardIndex)}
@@ -37,7 +38,6 @@ const Pricing = () => {
                       ? 'bg-white shadow-2xl'
                       : 'border border-[#f5f5f5]'
                   }  w-[350px] h-[500px] rounded-[12px] p-[40px] cursor-pointer transition-all`}
-                  key={cardIndex}
                 >
                   {/* card icon */}
                   <div className='mb-8'>

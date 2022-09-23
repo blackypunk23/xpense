@@ -21,13 +21,13 @@ const Cards = () => {
               data-aos='zoom-out'
               data-aos-offset='300'
               data-aos-delay={delay}
+              key={cardIndex}
             >
               <div
                 onClick={() => setIndex(cardIndex)}
                 className={`${
                   index === cardIndex && 'bg-white shadow-2xl'
                 }  w-[350px] h-[350px] flex flex-col justify-center items-center mx-auto p-[65px] text-center rounded-[12px] cursor-pointer transition-all`}
-                key={cardIndex}
               >
                 {/* card icon */}
                 <div className='mb-6'>
