@@ -17,10 +17,6 @@ const ClientSlider = ({ clients }) => {
       slidesPerView={1}
       spaceBetween={30}
       breakpoints={{
-        // sm: '640px',
-        // md: '768px',
-        // lg: '1024px',
-        // xl: '1170px',
         640: {
           slidesPerView: 1,
           spaceBetween: 10,
