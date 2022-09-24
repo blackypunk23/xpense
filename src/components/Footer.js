@@ -8,7 +8,7 @@ const Footer = () => {
   // destructure footer
   const { logo, links, legal, newsletter, form } = footer;
   return (
-    <footer className='section'>
+    <footer className='pt-[142px] pb-[60px]'>
       <div className='container mx-auto'>
         <div className='flex flex-col items-center text-center  lg:flex-row lg:items-start lg:text-left lg:justify-between gap-y-8'>
           {/* logo */}
@@ -79,7 +79,12 @@ const Footer = () => {
             <span className='text-sm text-light'>{form.smallText}</span>
           </div>
         </div>
-        <hr className='mt-10 mb-5' />
+        <hr
+          className='mt-10 mb-5'
+          data-aos='fade-up'
+          data-aos-offset='100'
+          data-aos-delay='200'
+        />
         <Copyright />
       </div>
     </footer>
