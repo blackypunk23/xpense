@@ -22,11 +22,8 @@ import AvatarImg2 from '../src/assets/img/testimonial/avatar2.png';
 import AvatarImg3 from '../src/assets/img/testimonial/avatar3.png';
 import AvatarImg4 from '../src/assets/img/testimonial/avatar4.png';
 import AvatarImg5 from '../src/assets/img/testimonial/avatar5.png';
-import AvatarImg6 from '../src/assets/img/testimonial/avatar6.png';
-import AvatarImg7 from '../src/assets/img/testimonial/avatar7.png';
-import AvatarImg8 from '../src/assets/img/testimonial/avatar8.png';
-import AvatarImg9 from '../src/assets/img/testimonial/avatar9.png';
-import AvatarImg10 from '../src/assets/img/testimonial/avatar10.png';
+import CtaImg1 from '../src/assets/img/cta/image1.svg';
+import CtaImg2 from '../src/assets/img/cta/image2.svg';
 
 export const header = {
   logo: LogoImg,
@@ -219,4 +216,12 @@ export const testimonials = {
       borderColor: '#BB7259',
     },
   ],
+};
+
+export const cta = {
+  title: '20M+ downloaded from 32 diffrent countires',
+  subtitle: 'Try demo for 7 days with full features.',
+  btnText: 'Try free demo',
+  img1: CtaImg1,
+  img2: CtaImg2,
 };
