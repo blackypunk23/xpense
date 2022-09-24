@@ -13,7 +13,7 @@ const Pricing = () => {
     <section className='section'>
       <div className='container mx-auto'>
         <h2
-          className='h2 mb-20 text-center'
+          className='h2 mb-10 lg:mb-20 text-center'
           data-aos='fade-up'
           data-aos-delay='200'
         >
@@ -36,7 +36,7 @@ const Pricing = () => {
                   className={`${
                     cardIndex === index
                       ? 'bg-white shadow-2xl'
-                      : 'border border-[#f5f5f5]'
+                      : 'border border-grey'
                   }  w-[350px] h-[500px] rounded-[12px] p-[40px] cursor-pointer transition-all`}
                 >
                   {/* card icon */}

@@ -184,6 +184,7 @@ export const testimonials = {
       image: AvatarImg1,
       name: 'Cameron Williamson',
       position: 'CEO',
+      borderColor: '#FF7235',
     },
     {
       message:
@@ -191,6 +192,7 @@ export const testimonials = {
       image: AvatarImg2,
       name: 'Shirley Hand',
       position: 'CEO',
+      borderColor: '#FFBE21',
     },
     {
       message:
@@ -198,6 +200,7 @@ export const testimonials = {
       image: AvatarImg3,
       name: 'Dr. Olivia Hansen',
       position: 'CEO',
+      borderColor: '#4756DF',
     },
     {
       message:
@@ -205,6 +208,7 @@ export const testimonials = {
       image: AvatarImg4,
       name: 'Aubrey Sanford',
       position: 'CEO',
+      borderColor: '#3EC1F3',
     },
     {
       message:
@@ -212,34 +216,7 @@ export const testimonials = {
       image: AvatarImg5,
       name: 'Terri Conroy',
       position: 'CEO',
-    },
-    {
-      message:
-        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium',
-      image: AvatarImg7,
-      name: 'Darrel Larson',
-      position: 'CEO',
-    },
-    {
-      message:
-        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium',
-      image: AvatarImg8,
-      name: 'Muriel Bechtelar',
-      position: 'CEO',
-    },
-    {
-      message:
-        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium',
-      image: AvatarImg9,
-      name: 'Darren Blanda',
-      position: 'CEO',
-    },
-    {
-      message:
-        'Eleifend fames amet, fames enim. Ullamcorper pellentesque ac volutpat nibh aliquet et, ut netus. Vel, fringilla sit eros pretium',
-      image: AvatarImg10,
-      name: 'Sandra Watsica',
-      position: 'CEO',
+      borderColor: '#BB7259',
     },
   ],
 };

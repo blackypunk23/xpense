@@ -9,13 +9,15 @@ import 'swiper/css/pagination';
 // import './styles.css';
 
 // import required modules
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 
 const ClientSlider = ({ clients }) => {
   return (
     <Swiper
       slidesPerView={1}
       spaceBetween={30}
+      grabCursor={true}
+      loop={true}
       breakpoints={{
         640: {
           slidesPerView: 1,
@@ -34,27 +36,26 @@ const ClientSlider = ({ clients }) => {
           spaceBetween: 30,
         },
       }}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[Pagination]}
-      className='mySwiper'
     >
       {clients.map((client, index) => {
-        // destructure clients
-        const { message, image, name, position } = client;
+        // destructure client
+        const { message, image, name, position, borderColor } = client;
         return (
           // slide
-          <SwiperSlide key={index}>
+          <SwiperSlide
+            style={{ borderColor: borderColor }}
+            className='border-t-[10px] rounded-t-[12px]'
+            key={index}
+          >
             {/* card */}
-            <div className='w-full mx-auto lg:max-w-[300px] xl:max-w-[350px] h-[250px] rounded-[12px] border-t-8 border-accent/10 bg-[#FFF8F5] p-6'>
+            <div className='w-full mx-auto lg:max-w-[300px] xl:max-w-[350px] h-[250px] rounded-[12px] border border-grey py-6 px-[30px]'>
               {/* message */}
-              <div className='mb-6 text-[#B68167]/90'>{message}</div>
+              <div className='mb-[30px]'>{message}</div>
               {/* name, image & position */}
               <div className='flex gap-x-[10px]'>
                 <img src={image} alt='' />
-                <div>{name},</div>
-                <div>{position}</div>
+                <div className='font-bold'>{name},</div>
+                <div className='text-light'>{position}</div>
               </div>
             </div>
           </SwiperSlide>

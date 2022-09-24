@@ -11,7 +11,7 @@ const Product = () => {
     <section className='section'>
       <div className='container mx-auto'>
         {/* title & subtitle */}
-        <div className='flex flex-col items-center lg:flex-row mb-16 lg:mb-20'>
+        <div className='flex flex-col items-center lg:flex-row mb-10 lg:mb-20'>
           <h2
             className='section-title'
             data-aos='fade-up'

@@ -22,6 +22,7 @@ module.exports = {
         light: '#BDBDBD',
         accent: '#FF7235',
         accentHover: '#e05216',
+        grey: '#F5F5F5',
       },
       backgroundImage: {
         overview: "url('/src/assets/img/overview/bg.svg')",
