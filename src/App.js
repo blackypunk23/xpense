@@ -17,6 +17,7 @@ import Product from './components/Product';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Cta from './components/Cta';
+import Footer from './components/Footer';
 
 const App = () => {
   // initialize aos
@@ -37,6 +38,7 @@ const App = () => {
       <Pricing />
       <Testimonials />
       <Cta />
+      <Footer />
       <div className='h-[4000px]'></div>
     </div>
   );

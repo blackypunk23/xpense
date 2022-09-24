@@ -24,6 +24,9 @@ import AvatarImg4 from '../src/assets/img/testimonial/avatar4.png';
 import AvatarImg5 from '../src/assets/img/testimonial/avatar5.png';
 import CtaImg1 from '../src/assets/img/cta/image1.svg';
 import CtaImg2 from '../src/assets/img/cta/image2.svg';
+import FacebookIcon from '../src/assets/img/copyright/facebook.svg';
+import TwitterIcon from '../src/assets/img/copyright/twitter.svg';
+import LinkedinIcon from '../src/assets/img/copyright/linkedin.svg';
 
 export const header = {
   logo: LogoImg,
@@ -219,9 +222,46 @@ export const testimonials = {
 };
 
 export const cta = {
-  title: '20M+ downloaded from 32 diffrent countires',
+  title: '20M+ downloaded from 32 different countries',
   subtitle: 'Try demo for 7 days with full features.',
   btnText: 'Try free demo',
   img1: CtaImg1,
   img2: CtaImg2,
+};
+
+export const footer = {
+  logo: LogoImg,
+  links: [
+    { name: 'Home', href: '/' },
+    { name: 'About us', href: '/' },
+    { name: 'Careers', href: '/' },
+    { name: 'Pricing', href: '/' },
+    { name: 'Features', href: '/' },
+    { name: 'Blog', href: '/' },
+  ],
+  legal: [
+    { name: 'Terms of use', href: '/' },
+    { name: 'Terms of conditions', href: '/' },
+    { name: 'Privacy policy', href: '/' },
+    { name: 'Cookie policy', href: '/' },
+  ],
+  newsletter: {
+    title: 'Newsletter',
+    subtitle: 'Over 25000 people have subscribed',
+    form: {
+      placeholder: 'Enter your email',
+      btnText: 'Subscribe',
+      smallText: 'We don’t sell your email and spam',
+    },
+  },
+};
+
+export const copyright = {
+  links: [{ name: 'Privacy & Terms', href: '/' }, { name: 'Contact us' }],
+  copyText: 'Copyright @ 2022 xpence',
+  social: [
+    { icon: FacebookIcon, href: '/' },
+    { icon: TwitterIcon, href: '/' },
+    { icon: LinkedinIcon, href: '/' },
+  ],
 };
