@@ -257,7 +257,14 @@ export const footer = {
 };
 
 export const copyright = {
-  links: [{ name: 'Privacy & Terms', href: '/' }, { name: 'Contact us' }],
+  link1: {
+    name: 'Privacy & Terms',
+    href: '/',
+  },
+  link2: {
+    name: 'Contact us',
+    href: '/',
+  },
   copyText: 'Copyright @ 2022 xpence',
   social: [
     { icon: FacebookIcon, href: '/' },

@@ -1,6 +1,8 @@
 import React from 'react';
 // import data
 import { footer } from '../data';
+// import components
+import Copyright from './Copyright';
 
 const Footer = () => {
   // destructure footer
@@ -77,6 +79,8 @@ const Footer = () => {
             <span className='text-sm text-light'>{form.smallText}</span>
           </div>
         </div>
+        <hr className='mt-10 mb-5' />
+        <Copyright />
       </div>
     </footer>
   );
