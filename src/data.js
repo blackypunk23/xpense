@@ -248,11 +248,11 @@ export const footer = {
   newsletter: {
     title: 'Newsletter',
     subtitle: 'Over 25000 people have subscribed',
-    form: {
-      placeholder: 'Enter your email',
-      btnText: 'Subscribe',
-      smallText: 'We don’t sell your email and spam',
-    },
+  },
+  form: {
+    placeholder: 'Enter your email',
+    btnText: 'Subscribe',
+    smallText: 'We don’t sell your email and spam',
   },
 };
 

@@ -4,7 +4,7 @@ import { footer } from '../data';
 
 const Footer = () => {
   // destructure footer
-  const { logo, links, legal, newsletter } = footer;
+  const { logo, links, legal, newsletter, form } = footer;
   return (
     <footer className='section'>
       <div className='container mx-auto'>
@@ -61,11 +61,20 @@ const Footer = () => {
             <div className='text-xl text-light mb-[18px]'>
               {newsletter.subtitle}
             </div>
-            <form>
-              <div className='bg-pink-50'>
-                <input type='text' />
+            {/* form */}
+            <form className='max-w-[349px] mb-[10px]'>
+              <div className='h-[62px] p-[7px] flex border border-dark rounded-lg'>
+                <input
+                  className='w-full h-full pl-6 border-none outline-none placeholder:text-dark'
+                  placeholder={form.placeholder}
+                  type='text'
+                />
+                <button className='btn btn-sm w-[102px] bg-accent rounded-lg text-white hover:bg-accentHover'>
+                  {form.btnText}
+                </button>
               </div>
             </form>
+            <span className='text-sm text-light'>{form.smallText}</span>
           </div>
         </div>
       </div>
