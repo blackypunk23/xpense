@@ -71,9 +71,10 @@ const Pricing = () => {
                   </div>
                   <button
                     className={`${
-                      cardIndex === index &&
-                      'bg-accent hover:bg-accentHover text-white'
-                    } btn btn-sm space-x-[14px] border border-accent text-accent`}
+                      cardIndex === index
+                        ? 'bg-accent hover:bg-accentHover text-white'
+                        : 'border border-accent text-accent'
+                    } btn btn-sm space-x-[14px] `}
                   >
                     <span>{btnText}</span> <HiOutlineArrowNarrowRight />
                   </button>
