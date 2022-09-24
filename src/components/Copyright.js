@@ -10,6 +10,7 @@ const Copyright = () => {
       className='flex flex-col items-center gap-y-2 lg:flex-row lg:justify-between'
       data-aos='fade-up'
       data-aos-delay='200'
+      data-aos-offset='0'
     >
       {/* links */}
       <div className='flex gap-x-6'>
