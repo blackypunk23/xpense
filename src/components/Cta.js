@@ -5,7 +5,7 @@ import { cta } from '../data';
 import { HiOutlineChevronDown } from 'react-icons/hi';
 
 const Cta = () => {
-  // destructure cta
+  // destructure cta data
   const { title, subtitle, btnText, img1, img2 } = cta;
   return (
     <section className='section bg-cta bg-cover bg-left-top'>
@@ -27,7 +27,7 @@ const Cta = () => {
             {subtitle}
           </p>
         </div>
-        {/* button & images */}
+        {/* btn & images */}
         <div className='flex justify-between'>
           <img
             className='hidden xl:flex'
@@ -41,8 +41,7 @@ const Cta = () => {
             data-aos='fade-up'
             data-aos-delay='400'
           >
-            {btnText}
-            <HiOutlineChevronDown />
+            {btnText} <HiOutlineChevronDown />
           </button>
           <img
             className='hidden xl:flex'

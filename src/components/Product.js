@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import data
 import { product } from '../data';
 // import components
@@ -29,6 +29,7 @@ const Product = () => {
             {subtitle}
           </p>
         </div>
+        {/* cards */}
         <Cards />
       </div>
     </section>

@@ -1,5 +1,4 @@
 import React from 'react';
-
 // import data
 import { features } from '../data';
 
@@ -30,7 +29,7 @@ const Feature2 = () => {
             <h2 className='title'>{title}</h2>
             <p className='lead'>{subtitle}</p>
             <button className='btn-link flex items-center gap-x-3 hover:gap-x-5 transition-all'>
-              {btnLink} <img src={btnIcon} />
+              {btnLink} <img src={btnIcon} alt='' />
             </button>
           </div>
         </div>

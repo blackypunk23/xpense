@@ -12,6 +12,7 @@ const Pricing = () => {
   return (
     <section className='section'>
       <div className='container mx-auto'>
+        {/* title */}
         <h2
           className='h2 mb-10 lg:mb-20 text-center'
           data-aos='fade-up'
@@ -19,11 +20,13 @@ const Pricing = () => {
         >
           {title}
         </h2>
+        {/* cards */}
         <div className='flex flex-col lg:flex-row lg:gap-x-[30px] gap-y-[30px] lg:gap-y-0 justify-center items-center'>
           {cards.map((card, cardIndex) => {
             // destructure card
             const { icon, title, services, price, userAmount, btnText, delay } =
               card;
+            // card
             return (
               <div
                 data-aos='fade-up'
@@ -37,7 +40,7 @@ const Pricing = () => {
                     cardIndex === index
                       ? 'bg-white shadow-2xl'
                       : 'border border-grey'
-                  }  w-[350px] h-[500px] rounded-[12px] p-[40px] cursor-pointer transition-all`}
+                  } w-[350px] h-[500px] rounded-[12px] p-[40px] cursor-pointer transition-all`}
                 >
                   {/* card icon */}
                   <div className='mb-8'>
@@ -49,13 +52,14 @@ const Pricing = () => {
                   <div className='flex flex-col gap-y-2 mb-6'>
                     {services.map((service, index) => {
                       // destructure service
+                      const { name } = service;
                       return (
                         <div
                           className='flex items-center gap-x-[10px]'
                           key={index}
                         >
                           <HiCheck className='text-light' />
-                          <div>{service.name}</div>
+                          <div>{name}</div>
                         </div>
                       );
                     })}
@@ -69,14 +73,16 @@ const Pricing = () => {
                     </div>
                     <div className='text-base text-light'>{userAmount}</div>
                   </div>
+                  {/* btn */}
                   <button
                     className={`${
                       cardIndex === index
                         ? 'bg-accent hover:bg-accentHover text-white'
                         : 'border border-accent text-accent'
-                    } btn btn-sm space-x-[14px] `}
+                    } btn btn-sm space-x-[14px]`}
                   >
-                    <span>{btnText}</span> <HiOutlineArrowNarrowRight />
+                    <span>{btnText}</span>
+                    <HiOutlineArrowNarrowRight />
                   </button>
                 </div>
               </div>

@@ -1,15 +1,8 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
+// import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
+// import swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
-
-// import './styles.css';
-
-// import required modules
-import { Pagination, Autoplay } from 'swiper';
 
 const ClientSlider = ({ clients }) => {
   return (
@@ -40,21 +33,21 @@ const ClientSlider = ({ clients }) => {
       {clients.map((client, index) => {
         // destructure client
         const { message, image, name, position, borderColor } = client;
+        // slide
         return (
-          // slide
           <SwiperSlide
+            key={index}
             style={{ borderColor: borderColor }}
             className='border-t-[10px] rounded-t-[12px]'
-            key={index}
           >
             {/* card */}
             <div className='w-full mx-auto lg:max-w-[300px] xl:max-w-[350px] h-[250px] rounded-[12px] border border-grey py-6 px-[30px]'>
-              {/* message */}
+              {/* person message */}
               <div className='mb-[30px]'>{message}</div>
-              {/* name, image & position */}
+              {/* person name, img & position */}
               <div className='flex gap-x-[10px]'>
                 <img src={image} alt='' />
-                <div className='font-bold'>{name},</div>
+                <div className='font-bold'>{name}</div>
                 <div className='text-light'>{position}</div>
               </div>
             </div>

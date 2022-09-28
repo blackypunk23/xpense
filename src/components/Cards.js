@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 // import data
 import { product } from '../data';
-// import arrow image
+// import images
 import ArrowImg from '../assets/img/product/cards/arrow.svg';
 
 const Cards = () => {
+  // index state
   const [index, setIndex] = useState(1);
-  // destructure product
+  // destructure product data
   const { cards } = product;
   return (
     <>
@@ -16,12 +17,11 @@ const Cards = () => {
           // destructure card
           const { icon, title, subtitle, delay } = card;
           return (
-            // card
             <div
+              key={cardIndex}
               data-aos='zoom-out'
               data-aos-offset='300'
-              data-aos-delay={delay}
-              key={cardIndex}
+              data-aos-delay='delay'
             >
               <div
                 onClick={() => setIndex(cardIndex)}
@@ -37,6 +37,7 @@ const Cards = () => {
                 <div className='mb-3 text-[30px] font-medium'>{title}</div>
                 {/* card subtitle */}
                 <p className='mb-6 text-light'>{subtitle}</p>
+                {/* arrow img */}
                 {index === cardIndex && <img src={ArrowImg} />}
               </div>
             </div>

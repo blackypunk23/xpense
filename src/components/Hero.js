@@ -27,7 +27,7 @@ const Hero = () => {
             >
               {subtitle}
             </p>
-            {/* button & compatibility text */}
+            {/* btn & comp text */}
             <div
               className='flex items-center max-w-sm lg:max-w-full mx-auto lg:mx-0 gap-x-2 lg:gap-x-6'
               data-aos='fade-down'

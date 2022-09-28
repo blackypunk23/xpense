@@ -2,7 +2,7 @@ import React from 'react';
 // import data
 import { testimonials } from '../data';
 // import components
-import ClientSlider from './ClientSlider';
+import ClientSlider from '../components/ClientSlider';
 
 const Testimonials = () => {
   // destructure testimonials
@@ -18,7 +18,7 @@ const Testimonials = () => {
         >
           {title}
         </h2>
-        {/* client slider */}
+        {/* slider */}
         <div data-aos='fade-up' data-aos-delay='400'>
           <ClientSlider clients={clients} />
         </div>
