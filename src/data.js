@@ -1,7 +1,9 @@
 // import images
-import LogoImg from '../src/assets/img/header/logo.svg';
-import HeroImg from '../src/assets/img/hero/image.svg';
-import OverviewProductImg from '../src/assets/img/overview/product.svg';
+// import LogoImg from '../src/assets/img/header/logo.svg';
+import LogoImg from '../src/assets/img/header/logotruck.png'; 
+// import HeroImg from '../src/assets/img/hero/image.svg';
+import OverviewProductImg from '../src/assets/img/trucks/truckroad.jpg';
+// import OverviewProductImg from '../src/assets/img/overview/product.svg';
 import FacebookImg from '../src/assets/img/overview/brands/facebook.svg';
 import GoogleImg from '../src/assets/img/overview/brands/google.svg';
 import CocaColaImg from '../src/assets/img/overview/brands/coca-cola.svg';
@@ -28,105 +30,128 @@ import FacebookIcon from '../src/assets/img/copyright/facebook.svg';
 import TwitterIcon from '../src/assets/img/copyright/twitter.svg';
 import LinkedinIcon from '../src/assets/img/copyright/linkedin.svg';
 
+// trucks 
+import MotorTruck from '../src/assets/img/trucks/motor.jpg'
+import IX from '../src/assets/img/trucks/IX-2000.PNG'
+import Oxi from '../src/assets/img/trucks/oxi.jpg'
+
 export const header = {
   logo: LogoImg,
-  btnText: 'Request a demo',
+  btnText: 'Más Información',
 };
 
 export const nav = [
-  { name: 'Features', href: '/' },
-  { name: 'About us', href: '/' },
-  { name: 'Pricing', href: '/' },
-  { name: 'Feedback', href: '/' },
+  // { name: 'Features', href: '/' },
+  // { name: 'About us', href: '/' },
+  // { name: 'Pricing', href: '/' },
+  // { name: 'Feedback', href: '/' },
 ];
 
 export const hero = {
-  title: 'Track your Expenses to Save Money',
-  subtitle: 'Helps you to organize your income and expenses',
-  btnText: 'Try free demo',
-  compText: '— Web, iOS and Android',
-  image: HeroImg,
+  title: 'Nuestro vehículo, utiliza su motor como nosotros nuestro corazón',
+  subtitle: 'El motor, el corazón de nuestros vehiculos',
+  btnText: 'Contactanos',
+  // compText: '— Web, iOS and Android',
+  // image: HeroImg,
 };
 
 export const overview = {
   productImg: OverviewProductImg,
   brands: [
-    {
-      image: FacebookImg,
-      delay: 300,
-    },
-    {
-      image: GoogleImg,
-      delay: 400,
-    },
-    {
-      image: CocaColaImg,
-      delay: 500,
-    },
-    {
-      image: LinkedInImg,
-      delay: 600,
-    },
-    {
-      image: SamsungImg,
-      delay: 700,
-    },
+    // {
+    //   image: FacebookImg,
+    //   delay: 300,
+    // },
+    // {
+    //   image: GoogleImg,
+    //   delay: 400,
+    // },
+    // {
+    //   image: CocaColaImg,
+    //   delay: 500,
+    // },
+    // {
+    //   image: LinkedInImg,
+    //   delay: 600,
+    // },
+    // {
+    //   image: SamsungImg,
+    //   delay: 700,
+    // },
   ],
 };
 
 export const features = {
   feature1: {
-    pretitle: 'Alwalys online',
-    title: 'Real-time support with cloud',
+    pretitle: 'Nuestro Motor',
+    title: 'El motor ha sido desarrollado  y diseñado por el fabricante',
     subtitle:
-      'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
-    image: Feature1Img,
+      'para que nos ofrezca una potencia y unas prestaciones específicas. Teniendo que conseguir que el nivel de emisión de gases, cumpla con  la normativa europea.',
+    // btnLink: 'Learn more',
+    // btnIcon: ArrowRightImg,
+    image: MotorTruck,
   },
   feature2: {
-    pretitle: 'Free some cost',
-    title: 'Save cost for you and family',
+    pretitle: 'Modelo',
+    title: 'IX-2000 glh',
     subtitle:
-      'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
-    image: Feature2Img,
+      'Este modelo, produce gas orto-oxihidrogeno (equivalente a 35 LPM de gas HHO) y  esta diseñado para usar en motores cuya cilindrada va de 100 cc a 25.000 cc, pues la cantidad de gas es ajustable según necesida',
+    // btnLink: 'Learn more',
+    // btnIcon: ArrowRightImg,
+    image: IX,
   },
   feature3: {
-    pretitle: 'Use anytime',
-    title: 'Use anytime when you need',
+    pretitle: 'Orto-Oxihidrogeno',
+    title: '¿Que es y que hace el gas Orto-Oxihidrogeno?',
     subtitle:
-      'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
-    image: Feature3Img,
+      'El alto poder calorifico del Gas Orto-Oxihidrogeno, inyectado en el motor, provoca que la temperatura de la combustión suba con rapidez, originando una pirolisis controlada que despega, quema, desintegra y elimina todos los depositos de carbonilla acumulados en menos de una hora.',
+    // btnLink: 'Learn more',
+    // btnIcon: ArrowRightImg,
+    image: Oxi,
   },
 };
 
 export const product = {
-  title: 'The Product we work with.',
+  title: 'Cambios en el motor.',
   subtitle:
-    'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.',
+    'Que nota el cliente después de un servicio de descarbonización interna de motor.',
   cards: [
     {
-      icon: CardIconImg1,
-      title: 'Cross platform',
-      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+      icon: CardIconImg3,
+      title: 'Más potencia',
+      subtitle: 'Recuperación de los caballos de fuerza',
       delay: 200,
     },
     {
-      icon: CardIconImg2,
-      title: 'Cloud server',
-      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+      icon: CardIconImg3,
+      title: 'Reducción',
+      subtitle: 'Reducción del consumo',
       delay: 400,
     },
     {
       icon: CardIconImg3,
-      title: 'Pure Javascript',
-      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
+      title: 'Recuperación',
+      subtitle: 'Recuperación del par perdido pora l perdida de compresión',
       delay: 600,
     },
+    // {
+    //   icon: CardIconImg3,
+    //   title: 'Recuperación2',
+    //   subtitle: 'Recuperación del par perdido pora l perdida de compresión',
+    //   delay: 800,
+    // },
+    // {
+    //   icon: CardIconImg3,
+    //   title: 'Recuperación3',
+    //   subtitle: 'Recuperación del par perdido pora l perdida de compresión',
+    //   delay: 800,
+    // },
+    // {
+    //   icon: CardIconImg3,
+    //   title: 'Recuperación4',
+    //   subtitle: 'Recuperación del par perdido pora l perdida de compresión',
+    //   delay: 800,
+    // },
   ],
 };
 
@@ -232,27 +257,27 @@ export const cta = {
 export const footer = {
   logo: LogoImg,
   links: [
-    { name: 'Home', href: '/' },
-    { name: 'About us', href: '/' },
-    { name: 'Careers', href: '/' },
-    { name: 'Pricing', href: '/' },
-    { name: 'Features', href: '/' },
-    { name: 'Blog', href: '/' },
+    // { name: 'Home', href: '/' },
+    // { name: 'About us', href: '/' },
+    // { name: 'Careers', href: '/' },
+    // { name: 'Pricing', href: '/' },
+    // { name: 'Features', href: '/' },
+    // { name: 'Blog', href: '/' },
   ],
   legal: [
-    { name: 'Terms of use', href: '/' },
-    { name: 'Terms of conditions', href: '/' },
-    { name: 'Privacy policy', href: '/' },
-    { name: 'Cookie policy', href: '/' },
+    // { name: 'Terms of use', href: '/' },
+    // { name: 'Terms of conditions', href: '/' },
+    // { name: 'Privacy policy', href: '/' },
+    // { name: 'Cookie policy', href: '/' },
   ],
   newsletter: {
     title: 'Newsletter',
-    subtitle: 'Over 25000 people have subscribed',
+    subtitle: 'Suscribete a nuestro nesletter',
   },
   form: {
-    placeholder: 'Enter your email',
-    btnText: 'Subscribe',
-    smallText: 'We don’t sell your email and spam',
+    placeholder: 'Ingresa tu email',
+    btnText: 'Subscribirse',
+    smallText: 'Enviaremos noticias',
   },
 };
 
@@ -265,7 +290,7 @@ export const copyright = {
     name: 'Contact us',
     href: '/',
   },
-  copyText: 'Copyright @ 2022 xpence',
+  copyText: 'Copyright @ 2023',
   social: [
     { icon: FacebookIcon, href: '/' },
     { icon: TwitterIcon, href: '/' },

@@ -35,9 +35,9 @@ const App = () => {
       <Feature2 />
       <Feature3 />
       <Product />
-      <Pricing />
+      {/* <Pricing />
       <Testimonials />
-      <Cta />
+      <Cta /> */}
       <Footer />
       {/* <div className='h-[4000px]'></div> */}
     </div>

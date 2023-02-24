@@ -41,9 +41,9 @@ const Hero = () => {
             </div>
           </div>
           {/* image */}
-          <div className='flex-1' data-aos='fade-up' data-aos-delay='800'>
+          {/* <div className='flex-1' data-aos='fade-up' data-aos-delay='800'>
             <img src={image} alt='' />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

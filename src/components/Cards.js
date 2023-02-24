@@ -6,7 +6,7 @@ import ArrowImg from '../assets/img/product/cards/arrow.svg';
 
 const Cards = () => {
   // index state
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   // destructure product data
   const { cards } = product;
   return (
